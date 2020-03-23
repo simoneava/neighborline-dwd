@@ -58,7 +58,7 @@ function addMessage(name, comment, cb){
         }
         
         else {
-            cb(newMessage);
+            cb(err, newMessage);
         }
 
     })
