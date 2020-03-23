@@ -38,6 +38,8 @@ form.onsubmit = event => {
     .then(response => response.json())
     .then(data => {
         console.log("no errors");
+        document.getElementById("comments").innerHTML += data.name + " says " + data.comment + " <br/>";
+        
     });
 
     

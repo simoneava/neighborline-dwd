@@ -40,7 +40,7 @@ app.post("/add", (request, response) => {
         response.json(newName);
     });
 
-//     console.log(newAddition);
+    
 });
 
 app.get("/display", (request, response) => {
@@ -53,8 +53,14 @@ app.get("/display", (request, response) => {
 
 function addMessage(name, comment, cb){
     Message.create({name: name, comment: comment}, (err, newMessage) => {
-        if (err) console.log(err)
-        else cb(newMessage)
+        if (err){
+            console.log(err);
+        }
+        
+        else {
+            cb(newMessage);
+        }
+
     })
     //Message.insert({name: name},(err, newName) => {
 //cb(err, newName);
