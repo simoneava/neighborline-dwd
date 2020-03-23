@@ -60,8 +60,11 @@ function addMessage(name, comment, cb){
     //});
 }
 
-app.listen(8000, () => {
-     console.log("I hear you on 8000!");
+// app.listen(8000, () => {
+//      console.log("I hear you on 8000!");
 
+// });
+
+const port = process.env.PORT || 3000;
+app.listen(port, () => {  console.log(`Express server listening on port ${port}!`); 
 });
-
