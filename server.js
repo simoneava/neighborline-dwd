@@ -1,9 +1,10 @@
-require("dotenv").config();
 const fs = require('fs');
 const path = require('path');
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+require("dotenv").config();
+
 
 const MONGO_URL = process.env.MONGO_URL;
 
@@ -63,8 +64,8 @@ function addMessage(name, comment, cb){
 // app.listen(8000, () => {
 //      console.log("I hear you on 8000!");
 
-// });
+// }):
 
-const port = process.env.PORT || 3000;
-app.listen(port, () => {  console.log(`Express server listening on port ${port}!`); 
+const port = process.env.PORT || 3000; 
+app.listen(port, () => { console.log(`Express server listening on port ${port}!`); 
 });
