@@ -40,7 +40,7 @@ app.post("/add", (request, response) => {
         response.json(newName);
     });
 
-    console.log(newAddition);
+//     console.log(newAddition);
 });
 
 app.get("/display", (request, response) => {
