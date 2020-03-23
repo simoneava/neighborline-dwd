@@ -10,7 +10,7 @@ window.onload = () => {
     .then(data => {
         console.log(data);
         for (let i = 0; i < data.length; i++) {
-            document.getElementById("comments").innerHTML += data[i].name + " says " + data[i].comment;
+            document.getElementById("comments").innerHTML += data[i].name + " says " + data[i].comment + " <br/>";
         }
     });
     
