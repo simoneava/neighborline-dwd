@@ -30,7 +30,7 @@ const Message = mongoose.model("Message", MessageSchema);
 
 
 
-app.use(express.static("public"));
+app.use(express.static("Public"));
 app.use(express.json());
 
 app.post("/add", (request, response) => {
